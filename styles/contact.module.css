@@ -1,0 +1,128 @@
+.container{
+    background-color: #212529;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+}
+
+.h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+}
+
+.smallBar {
+    width: 100px;
+    height: 4px;
+    background-color: #20c997;
+}
+
+.lineContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.twoColumns{
+    display:flex;
+}
+
+.address{
+    width:20rem;
+}
+
+.phone{
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+.email{
+    display: flex;
+    margin-bottom: 0.8rem;
+
+}
+
+.icon{
+    margin-right: 1rem;
+}
+
+.horizontalList{
+    padding-top: 0.25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontalList span{
+    font-size: 1.25rem;
+    /* padding-left: 0.5rem; */
+    padding-right: 1rem;
+    /* padding-top: 2rem; */
+}
+
+.fbIcon:hover{
+    cursor: pointer;
+    color: #1877f2;
+}
+
+.liIcon:hover{
+    cursor: pointer;
+    color: #00A0DC;
+}
+
+.gitIcon:hover{
+    cursor: pointer;
+    color: #999999;
+}
+
+
+.nameEmail{
+    display: flex;
+    margin-bottom: 1rem;
+
+}
+
+.nameField{
+    background-color: #343a40;
+    width:22rem;
+    margin-right: 1rem;
+    border:0;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    color: white;
+    padding: 0.4rem;
+}
+
+.emailField{
+    background-color: #343a40;
+    width:22rem;
+    border:0;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.4rem;
+}
+
+.messageField{
+    background-color: #343a40;
+    width:45rem;
+    height:10rem;
+    border:0;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.4rem;
+}
+
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.button{
+    background-color: #20c997;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border: 0;
+}

@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+  }
+  
+  .sidebar {
+    flex: 0 0 17rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .content {
+    flex: 1;
+    overflow-y: auto;
+    padding-left: 17rem;
+  }

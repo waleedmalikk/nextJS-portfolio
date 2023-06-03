@@ -1,12 +1,13 @@
 .container{
-    padding: 2rem;
-    min-height: 100vh;
-    width: 15rem;
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,1);
     color: hsla(0,0%,98%,.9);
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh; 
+    overflow-y: auto;
+    width: 17rem;
+    padding-top: 3rem;
 }
 
 .profile_pic{
@@ -14,9 +15,62 @@
     border: 6px solid #343a40;
 }
 
+.name{
+    margin-top: 1.5rem;
+    font-weight: bolder;
+}
+
 .verticalList{
+    padding-top: 2rem;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.verticalList li{
+    padding-bottom: 1.25rem;
+}
+
+.verticalList button{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-size: 17px;
+}
+
+.verticalList button:hover{
+    cursor: pointer;
+    color:#20c997;
+}
+
+.horizontalList{
+    padding-top: 0.25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontalList span{
+    font-size: 1.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 2rem;
+}
+
+
+.horizontalList a{
+    color:white;
+}
+
+.liAnchor:hover{
+    color: #00A0DC;
+}
+
+.ltAnchor:hover{
+    color: orange;
+}
+
+.gitAnchor:hover{
+    color: #999999;
 }

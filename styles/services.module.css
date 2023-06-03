@@ -1,0 +1,59 @@
+.container{
+    background-color: #343a40;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+}
+
+.h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+}
+
+.smallBar {
+    width: 100px;
+    height: 4px;
+    background-color: #20c997;
+}
+
+.lineContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.h4{
+    color:white;
+    margin: 0;
+}
+
+.para{
+    color: hsla(0,0%,100%,.5);
+    line-height: 1.8;
+    /* margin-bottom: 1rem; */
+    margin: 0;
+}
+
+.icon{
+    color:#20c997;
+    font-size: 36px;
+    height: 10px;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.text{
+    padding-left: 1rem;
+
+}
+
+.twoColumns{
+    display: flex;
+    flex-direction: row;
+}

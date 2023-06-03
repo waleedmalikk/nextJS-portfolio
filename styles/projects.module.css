@@ -1,0 +1,60 @@
+.container{
+    background-color: #343a40;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+}
+
+.h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+}
+
+.smallBar {
+    width: 100px;
+    height: 4px;
+    background-color: #20c997;
+}
+
+.lineContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+  }
+  
+  .projectItem img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .filterList{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .filterItem{
+    margin-right: 1rem;
+  }
+
+  .filterItem:hover{
+    cursor: pointer;
+    color:#20c997;
+  }
+
+  .active{
+    color:#20c997;
+    border-bottom: 2px solid #20c997;
+    padding-bottom: 2px;
+    display: inline;
+  }

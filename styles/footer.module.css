@@ -1,0 +1,11 @@
+.twoColumns{
+    background-color: #343a40;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.terms{
+    padding-right: 2rem;
+    text-decoration: none;
+    color: inherit;
+}

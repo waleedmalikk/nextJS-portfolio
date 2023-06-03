@@ -1,14 +1,13 @@
 import Head from 'next/head'
-import Sidebar from '@pages/components/Sidebar'
-
+import ScrollingPage from "../components/ScrollingPage";
 
 export default function Home() {
   return (
-    <div>
+    <>
      <Head>
       <title>Portfolio</title>
-     </Head>
-     <Sidebar/>
-     </div>
+     </Head>  
+     <ScrollingPage />
+     </>
   )
 }

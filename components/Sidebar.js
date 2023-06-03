@@ -1,31 +1,51 @@
 import React from 'react'
-import sidebarStyles from "../styles/sidebar.module.css"
+import styles from "../styles/sidebar.module.css"
 import Image from 'next/image'
 
-const Sidebar = () => {
+const Sidebar = ({
+  onHomeClick,
+  onAboutClick,
+  onServicesClick,
+  onSummaryClick,
+  onProjectsClick,
+  onContactClick
+}) => {
   return (
-    <div className={sidebarStyles.container}>
-        <Image className={sidebarStyles.profile_pic} src="/profile_pic.jpg" alt="Profile Picture" width={150} height={150} />
-        <h3>Lorem ipsum</h3>
+    <div className={styles.container}>
+        <Image className={styles.profile_pic} src="/profilePic.jpeg" alt="Profile Picture" width={175} height={175} />
+        <h4 className={styles.name}>Waleed Malik</h4>
         <div > 
-            <ul className={sidebarStyles.verticalList}>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>What I Do</li>
-                <li>Resume</li>
-                <li>Portfolio</li>
-                <li>Testimonials</li>
-                <li>Contact</li>
+            <ul className={styles.verticalList}>
+              <li>
+                <button onClick={onHomeClick}>Home</button>
+              </li>
+              <li>
+                <button onClick={onAboutClick}>About</button>
+              </li>
+              <li>
+                <button onClick={onServicesClick}>Services</button>
+              </li>
+              <li>
+                <button onClick={onSummaryClick}>Summary</button>
+              </li>
+              <li>
+                <button onClick={onProjectsClick}>Projects</button>
+              </li>
+              <li>
+                <button onClick={onContactClick}>Contact</button>
+              </li>
             </ul>
         </div>
-        <div>
-            <ul>
-                <li>f</li>
-                <li>s</li>
-                <li>g</li>
-                <li>l</li>
-
-            </ul>
+        <div className={styles.horizontalList}>
+              <a className={styles.liAnchor} href="https://www.linkedin.com/in/waleedmalikk" target="_blank" rel="noopener noreferrer">
+                <span className="fab fa-linkedin"></span>
+              </a>    
+              <a className={styles.gitAnchor} href="https://github.com/waleedmalikk" target="_blank" rel="noopener noreferrer">
+                <span className="fab fa-github"></span>
+              </a>
+              <a className={styles.ltAnchor} href="https://leetcode.com/waleedmalikk_" target="_blank" rel="noopener noreferrer">
+                <span className="fas fa-code"></span>
+              </a>   
         </div>
     </div>
   )

@@ -1,0 +1,22 @@
+.h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+}
+
+.h2 h2{
+    font-weight: 900;
+}
+
+.smallBar {
+    width: 85px;
+    height: 2.5px;
+    background-color: #20c997;
+  }
+
+  .lineContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
