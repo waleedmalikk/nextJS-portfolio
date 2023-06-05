@@ -1,29 +1,3 @@
-.container{
-    background-color: #343a40;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 4rem;
-}
-
-.h1{
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0 0 0;
-}
-
-.smallBar {
-    width: 100px;
-    height: 4px;
-    background-color: #20c997;
-}
-
-.lineContainer{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 3rem;
-}
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -34,6 +8,14 @@
   .projectItem img {
     max-width: 100%;
     height: auto;
+    border-radius: 0.5rem;
+    transition: transform 0.5s ease;
+  }
+
+  .projectItem img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transform-origin: center center;
   }
 
 

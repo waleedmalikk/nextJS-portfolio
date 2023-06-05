@@ -1,13 +1,12 @@
 .container{
     background-color: rgba(0,0,0,1);
-    color: hsla(0,0%,98%,.9);
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh; 
+    height: 100%; 
     overflow-y: auto;
-    width: 17rem;
-    padding-top: 3rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .profile_pic{
@@ -15,9 +14,17 @@
     border: 6px solid #343a40;
 }
 
+.profile_pic:hover{
+    cursor: pointer;
+}
+
 .name{
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     font-weight: bolder;
+}
+
+.name:hover{
+    cursor: pointer;
 }
 
 .verticalList{
@@ -38,6 +45,7 @@
     color: white;
     border: 0;
     font-size: 17px;
+    transition: color 0.5s ease;
 }
 
 .verticalList button:hover{
@@ -61,6 +69,7 @@
 
 .horizontalList a{
     color:white;
+    transition: color 0.5s ease;
 }
 
 .liAnchor:hover{
@@ -73,4 +82,8 @@
 
 .gitAnchor:hover{
     color: #999999;
+}
+
+.active{
+    color: #20c997!important;
 }

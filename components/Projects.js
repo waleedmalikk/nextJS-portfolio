@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from "../styles/projects.module.css"
+import ContainerGrey from './ContainerGrey';
+import Title from './Title';
 
 const Projects = () => {
   const [selectedFilter, setSelectedFilter] = useState('All');
@@ -31,13 +33,8 @@ const Projects = () => {
     }
 
   return (
-    <div className={styles.container}>
-        <div className={styles.h1}>
-            <h1>My Work</h1>
-        </div>
-        <div className={styles.lineContainer}>
-            <div className={styles.smallBar}></div>
-        </div>
+    <ContainerGrey>
+        <Title title={"Projects"}/>
         <div className={styles.filterList}>
         <div
             className={selectedFilter === 'All' ? `${styles.filterItem} ${styles.active}` : `${styles.filterItem}`}
@@ -77,7 +74,7 @@ const Projects = () => {
             </div>
             ))}
         </div>
-    </div>
+    </ContainerGrey>
   );
 };
 

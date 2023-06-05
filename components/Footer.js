@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={styles.twoColumns}>
         <div className={styles.copyRight}>
-            Copyright © 2023 Simone. All Rights Reserved.
+            Copyright © 2023 <span className={styles.teal}>Waleed</span>.  All Rights Reserved.
         </div>
         <div>
             <a className={styles.terms}>

@@ -1,26 +1,23 @@
 import React from 'react'
 import styles from '../styles/contact.module.css'
+import Container from './Container'
+import Title from './Title'
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
-        <div className={styles.h1}>
-            <h1>Get in Contact</h1>
-        </div>
-        <div className={styles.lineContainer}>
-            <div className={styles.smallBar}></div>
-        </div>
+    <Container>
+    <Title title="Contact"/>
         <div className={styles.twoColumns}>
             <div className={styles.address}>
                 <h4 className={styles.addressTitle}>
-                    Address
+                    ADDRESS
                 </h4>
-                <p class={styles.addressPara}>
-                    4th Floor, Plot No.22,
+                <p className={styles.addressPara}>
+                    Abc City,
                     <br />
-                    145 Murphy Canyon Rd.
+                    Xyz Country,
                     <br />
-                    San Diego CA 2028
+                    Pakistan
                 </p>
                 <div className={styles.info}>
                     <div className={styles.phone}>
@@ -49,7 +46,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <h4 className={styles.followTitle}>
-                    Follow Me
+                    FOLLOW ME
                 </h4>
                 <div className={styles.horizontalList}>
                     <div className={styles.fbIcon}>
@@ -82,7 +79,7 @@ const Contact = () => {
                 
             </div>
         </div>
-    </div>
+    </Container>
     
   )
 }

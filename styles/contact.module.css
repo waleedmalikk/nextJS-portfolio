@@ -1,35 +1,15 @@
-.container{
-    background-color: #212529;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 4rem;
-}
-
-.h1{
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0 0 0;
-}
-
-.smallBar {
-    width: 100px;
-    height: 4px;
-    background-color: #20c997;
-}
-
-.lineContainer{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 3rem;
-}
-
 .twoColumns{
     display:flex;
+    justify-content: space-between;
+    padding-top: 2rem;
 }
 
 .address{
     width:20rem;
+}
+
+.note{
+    padding-right: 2rem;
 }
 
 .phone{
@@ -45,6 +25,7 @@
 
 .icon{
     margin-right: 1rem;
+    color:#20c997;
 }
 
 .horizontalList{
@@ -55,9 +36,8 @@
 
 .horizontalList span{
     font-size: 1.25rem;
-    /* padding-left: 0.5rem; */
     padding-right: 1rem;
-    /* padding-top: 2rem; */
+    transition: color 0.5s ease;
 }
 
 .fbIcon:hover{
@@ -125,4 +105,9 @@
     padding: 0.5rem 2rem;
     border-radius: 2rem;
     border: 0;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover{
+    background-color:#128562;
 }

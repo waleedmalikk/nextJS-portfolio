@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "../styles/sidebar.module.css"
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 const Sidebar = ({
   onHomeClick,
@@ -8,31 +9,50 @@ const Sidebar = ({
   onServicesClick,
   onSummaryClick,
   onProjectsClick,
-  onContactClick
+  onContactClick,
+  activeRef,
+  homeRef,
+  aboutRef,
+  servicesRef,
+  summaryRef,
+  projectsRef,
+  contactRef
 }) => {
   return (
     <div className={styles.container}>
         <Image className={styles.profile_pic} src="/profilePic.jpeg" alt="Profile Picture" width={175} height={175} />
         <h4 className={styles.name}>Waleed Malik</h4>
-        <div > 
+        <div> 
             <ul className={styles.verticalList}>
               <li>
-                <button onClick={onHomeClick}>Home</button>
+                <button  
+                className={activeRef === homeRef ? styles.active : ""}
+                onClick={onHomeClick}>Home</button>
               </li>
               <li>
-                <button onClick={onAboutClick}>About</button>
+                <button 
+                className={activeRef === aboutRef ? styles.active : ""}
+                 onClick={onAboutClick}>About</button>
               </li>
               <li>
-                <button onClick={onServicesClick}>Services</button>
+                <button
+                className={activeRef === servicesRef ? styles.active : ""}
+                onClick={onServicesClick}>Services</button>
               </li>
               <li>
-                <button onClick={onSummaryClick}>Summary</button>
+                <button
+                className={activeRef === summaryRef ? styles.active : ""}
+                 onClick={onSummaryClick}>Summary</button>
               </li>
               <li>
-                <button onClick={onProjectsClick}>Projects</button>
+                <button
+                className={activeRef === projectsRef ? styles.active : ""}
+                 onClick={onProjectsClick}>Projects</button>
               </li>
               <li>
-                <button onClick={onContactClick}>Contact</button>
+                <button 
+                className={activeRef === contactRef ? styles.active : ""}
+                onClick={onContactClick}>Contact</button>
               </li>
             </ul>
         </div>

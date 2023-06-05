@@ -21,7 +21,6 @@ export default function App({ Component, pageProps }) {
         integrity="sha384-...snip..."
         crossorigin="anonymous"
       />
-
       </Head>
     <Component {...pageProps} />
   </> );
